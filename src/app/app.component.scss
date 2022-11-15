@@ -1,0 +1,47 @@
+ag-grid-angular {
+    width: 100%;
+    height: 100%;
+    //border: 1px solid gray;
+    box-shadow: 0 6px 12px rgba($color: #000000, $alpha: 0.1);
+  
+    & >>> .customHeaderLabel {
+      /*Necessary to allow for text to grow vertically*/
+      width: 100% !important;
+    }
+  
+    & >>> [col-id="total"] {
+      & >>> .customHeaderLabel {
+        display: flex;
+        justify-content: flex-end;
+      }
+    }
+  }
+  
+  ::ng-deep .ag-theme-material .ag-header-row {
+    font-size: 16px !important;
+  }
+  
+  ::ng-deep .ag-theme-alpine .ag-root-wrapper {
+    border: none;
+    .ag-body-horizontal-scroll-viewport {
+      overflow-x: auto;
+    }
+  }
+  
+  ::ng-deep .ag-theme-alpine .ag-header {
+    //background-color: rgba(6, 6, 6, 0.7);
+    background-color: #e7e7e7;
+    border: none;
+    .ag-header-cell {
+      border: none;
+      color: #212121;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      .customHeaderLabel {
+        margin: 0 !important;
+        white-space: break-spaces;
+      }
+    }
+  }

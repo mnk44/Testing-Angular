@@ -1,0 +1,33 @@
+<div>
+    <div class="modal-header">
+      <h4 class="modal-title pull-left" style="font-weight: bold;">NEW PRODUCT</h4>
+    </div>
+    <div class="modal-body">
+      <h4>NAME:</h4>
+      <div class="d-flex quantity">
+        <input class="form-control" type="string" style="background-color: white;"/>
+      </div>
+      <h4>SERIAL NUMBER:</h4>
+      <div class="d-flex quantity">
+        <input class="form-control" type="number" style="background-color: white;"/>
+      </div>
+      <h4>PRICE:</h4>
+      <div class="d-flex quantity">
+        <button type="button" class="btn increase" (click)="decrease()">
+            <span style="font-weight: bold; font-size: x-large; color: black;">-</span>
+        </button>
+        <input class="form-control" type="number" style="background-color: white;" min="0.05" disabled/>
+        <button type="button" class="btn increase" (click)="increase()">
+            <span style="font-weight: bold; font-size: x-large; color: black;">+</span>
+          </button>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn cancel" (click)="onCancel()">
+        <span style="font-size: medium; color: white;">CANCEL</span>
+      </button>
+      <button type="button" class="btn accept" (click)="setAmount()">
+        <span style="font-size: medium; color: white;">SAVE</span>
+      </button>
+    </div>
+    </div>

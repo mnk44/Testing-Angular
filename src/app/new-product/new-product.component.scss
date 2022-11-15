@@ -1,0 +1,46 @@
+.modal-header {
+  border-bottom: 0;
+  justify-content: center;
+}
+
+.modal-body, .modal-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-body {
+  flex-direction: column;
+}
+
+.quantity {
+
+  button {
+    width: 100px;
+    font-weight: 200;
+  }
+
+  input {
+    width: 150px;
+    font-size: 25px;
+    font-weight: 200;
+    text-align: center;
+  }
+
+}
+
+.modal-footer {
+  border-top: 0;
+}
+
+.increase{
+  background-color: cadetblue;
+}
+
+.cancel{
+  background-color: brown;
+}
+
+.accept{
+  background-color: olivedrab;
+}
